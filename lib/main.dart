@@ -13,7 +13,8 @@ class MyApp extends StatelessWidget {
     return new MaterialApp(
         title: "Draw Navigation App",
         routes: <String,WidgetBuilder>{
-          "/DetailScreen": (BuildContext context) => new DetailScreen(),
+          "/HomeScreen": (BuildContext context) => HomeScreen(),
+          "/DetailScreen": (BuildContext context) => DetailScreen(),
         },
         home:
         HomeScreen()
