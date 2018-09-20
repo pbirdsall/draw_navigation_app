@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:io';
 
 import 'package:flutter/cupertino.dart';
@@ -8,7 +9,7 @@ class PlatformWillPopScope extends StatelessWidget{
 
   final Key key;
   final Widget child;
-  final WillPopCallback onWillPop;
+  final WillPopCallback onWillPop = () {return Future.value(false);};
 
   final EdgeInsetsGeometry paddingExternal = EdgeInsets.all(0.0);
 
