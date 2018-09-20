@@ -8,7 +8,7 @@ import 'package:draw_navigation_app/common/platform/platformWillPopScope.dart';
 class DetailScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return WillPopScope(
+    return PlatformWillPopScope(
         onWillPop: () {
       if(Navigator.canPop(context)) {
         Navigator.of(context).pushNamedAndRemoveUntil('/HomeScreen', (Route<dynamic> route) => false);
